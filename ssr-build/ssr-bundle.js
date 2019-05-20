@@ -66,24 +66,34 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "/QC5":
+/***/ "BBdy":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"center":"center__1ucmo","centerleft":"centerleft__U9tMW","centerright":"centerright__2mv2t","label":"label__jJP_3","quotedetails":"quotedetails__1SJ0_","timeframe":"timeframe__2t2UG","smallabel":"smallabel__1p9w1","droplet":"droplet__3AueL","quote":"quote__4b2nX"};
+
+/***/ }),
+
+/***/ "JkW7":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "subscribers", function() { return subscribers; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCurrentUrl", function() { return getCurrentUrl; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "route", function() { return route; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return Router; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return Route; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return Link; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_preact__ = __webpack_require__("KM04");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_preact___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_preact__);
+
+// EXTERNAL MODULE: ./style/index.css
+var style = __webpack_require__("rq4c");
+var style_default = /*#__PURE__*/__webpack_require__.n(style);
+
+// EXTERNAL MODULE: ../node_modules/preact/dist/preact.min.js
+var preact_min = __webpack_require__("KM04");
+var preact_min_default = /*#__PURE__*/__webpack_require__.n(preact_min);
+
+// CONCATENATED MODULE: ../node_modules/preact-router/dist/preact-router.es.js
 
 
 var EMPTY$1 = {};
 
-function assign(obj, props) {
+function preact_router_es_assign(obj, props) {
 	// eslint-disable-next-line guard-for-in
 	for (var i in props) {
 		obj[i] = props[i];
@@ -310,7 +320,7 @@ function initEventListeners() {
 	eventListenersInitialized = true;
 }
 
-var Router = function (Component$$1) {
+var preact_router_es_Router = function (Component$$1) {
 	function Router(props) {
 		Component$$1.call(this, props);
 		if (props.history) {
@@ -391,10 +401,10 @@ var Router = function (Component$$1) {
 			if (matches) {
 				if (invoke !== false) {
 					var newProps = { url: url, matches: matches };
-					assign(newProps, matches);
+					preact_router_es_assign(newProps, matches);
 					delete newProps.ref;
 					delete newProps.key;
-					return Object(__WEBPACK_IMPORTED_MODULE_0_preact__["cloneElement"])(vnode, newProps);
+					return Object(preact_min["cloneElement"])(vnode, newProps);
 				}
 				return vnode;
 			}
@@ -429,101 +439,25 @@ var Router = function (Component$$1) {
 	};
 
 	return Router;
-}(__WEBPACK_IMPORTED_MODULE_0_preact__["Component"]);
+}(preact_min["Component"]);
 
-var Link = function Link(props) {
-	return Object(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('a', assign({ onClick: handleLinkClick }, props));
+var preact_router_es_Link = function Link(props) {
+	return Object(preact_min["h"])('a', preact_router_es_assign({ onClick: handleLinkClick }, props));
 };
 
-var Route = function Route(props) {
-	return Object(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(props.component, props);
+var preact_router_es_Route = function Route(props) {
+	return Object(preact_min["h"])(props.component, props);
 };
 
-Router.subscribers = subscribers;
-Router.getCurrentUrl = getCurrentUrl;
-Router.route = route;
-Router.Router = Router;
-Router.Route = Route;
-Router.Link = Link;
+preact_router_es_Router.subscribers = subscribers;
+preact_router_es_Router.getCurrentUrl = getCurrentUrl;
+preact_router_es_Router.route = route;
+preact_router_es_Router.Router = preact_router_es_Router;
+preact_router_es_Router.Route = preact_router_es_Route;
+preact_router_es_Router.Link = preact_router_es_Link;
 
-/* harmony default export */ __webpack_exports__["default"] = (Router);
+/* harmony default export */ var preact_router_es = (preact_router_es_Router);
 //# sourceMappingURL=preact-router.es.js.map
-
-/***/ }),
-
-/***/ "BBdy":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"center":"center__1ucmo","centerleft":"centerleft__U9tMW","centerright":"centerright__2mv2t","label":"label__jJP_3","quotedetails":"quotedetails__1SJ0_","timeframe":"timeframe__2t2UG","smallabel":"smallabel__1p9w1","droplet":"droplet__3AueL","quote":"quote__4b2nX"};
-
-/***/ }),
-
-/***/ "JkW7":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-
-// EXTERNAL MODULE: ./style/index.css
-var style = __webpack_require__("rq4c");
-var style_default = /*#__PURE__*/__webpack_require__.n(style);
-
-// EXTERNAL MODULE: ../node_modules/preact/dist/preact.min.js
-var preact_min = __webpack_require__("KM04");
-var preact_min_default = /*#__PURE__*/__webpack_require__.n(preact_min);
-
-// EXTERNAL MODULE: ../node_modules/preact-router/dist/preact-router.es.js
-var preact_router_es = __webpack_require__("/QC5");
-
-// EXTERNAL MODULE: ../node_modules/preact-router/match.js
-var match = __webpack_require__("sw5u");
-var match_default = /*#__PURE__*/__webpack_require__.n(match);
-
-// EXTERNAL MODULE: ./components/header/style.css
-var header_style = __webpack_require__("u3et");
-var header_style_default = /*#__PURE__*/__webpack_require__.n(header_style);
-
-// CONCATENATED MODULE: ./components/header/index.js
-
-
-
-
-
-var _ref = Object(preact_min["h"])(
-	'h1',
-	null,
-	'Preact App'
-);
-
-var header_Header = function Header() {
-	return Object(preact_min["h"])(
-		'header',
-		{ 'class': header_style_default.a.header },
-		_ref,
-		Object(preact_min["h"])(
-			'nav',
-			null,
-			Object(preact_min["h"])(
-				match["Link"],
-				{ activeClassName: header_style_default.a.active, href: '/' },
-				'Home'
-			),
-			Object(preact_min["h"])(
-				match["Link"],
-				{ activeClassName: header_style_default.a.active, href: '/profile' },
-				'Me'
-			),
-			Object(preact_min["h"])(
-				match["Link"],
-				{ activeClassName: header_style_default.a.active, href: '/profile/john' },
-				'John'
-			)
-		)
-	);
-};
-
-/* harmony default export */ var header = (header_Header);
 // EXTERNAL MODULE: ./routes/home/style.css
 var home_style = __webpack_require__("ZAL5");
 var home_style_default = /*#__PURE__*/__webpack_require__.n(home_style);
@@ -8159,7 +8093,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var quote__ref = Object(preact_min["h"])(
+var _ref = Object(preact_min["h"])(
     'strong',
     null,
     '50p'
@@ -8212,7 +8146,7 @@ var quote_Quote = function (_Component) {
                             this.props.litres
                         ),
                         ' litres at ',
-                        quote__ref,
+                        _ref,
                         ' per litre'
                     )
                 ),
@@ -8533,15 +8467,12 @@ function app__inherits(subClass, superClass) { if (typeof superClass !== "functi
 
 
 
-
-
 // Code-splitting is automated for routes
 
 
+var app__ref = Object(preact_min["h"])(home_Home, { path: '/oilsite' });
 
-var app__ref = Object(preact_min["h"])(home_Home, { path: '/' });
-
-var app__ref2 = Object(preact_min["h"])(quote_Quote, { path: '/quote/' });
+var app__ref2 = Object(preact_min["h"])(home_Home, { path: '/' });
 
 var app_App = function (_Component) {
 	app__inherits(App, _Component);
@@ -8572,7 +8503,7 @@ var app_App = function (_Component) {
 			'div',
 			{ id: 'app' },
 			Object(preact_min["h"])(
-				preact_router_es["Router"],
+				preact_router_es_Router,
 				{ onChange: this.handleRoute },
 				app__ref,
 				app__ref2
@@ -8808,121 +8739,6 @@ module.exports = {"home":"home__MseGd","pricing":"pricing__3Lrwt","containerbox"
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "sw5u":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.Link = exports.Match = undefined;
-
-var _extends = Object.assign || function (target) {
-	for (var i = 1; i < arguments.length; i++) {
-		var source = arguments[i];for (var key in source) {
-			if (Object.prototype.hasOwnProperty.call(source, key)) {
-				target[key] = source[key];
-			}
-		}
-	}return target;
-};
-
-var _preact = __webpack_require__("KM04");
-
-var _preactRouter = __webpack_require__("/QC5");
-
-function _objectWithoutProperties(obj, keys) {
-	var target = {};for (var i in obj) {
-		if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
-	}return target;
-}
-
-function _classCallCheck(instance, Constructor) {
-	if (!(instance instanceof Constructor)) {
-		throw new TypeError("Cannot call a class as a function");
-	}
-}
-
-function _possibleConstructorReturn(self, call) {
-	if (!self) {
-		throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	}return call && (typeof call === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-	if (typeof superClass !== "function" && superClass !== null) {
-		throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-	}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
-
-var Match = exports.Match = function (_Component) {
-	_inherits(Match, _Component);
-
-	function Match() {
-		var _temp, _this, _ret;
-
-		_classCallCheck(this, Match);
-
-		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-			args[_key] = arguments[_key];
-		}
-
-		return _ret = (_temp = (_this = _possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.update = function (url) {
-			_this.nextUrl = url;
-			_this.setState({});
-		}, _temp), _possibleConstructorReturn(_this, _ret);
-	}
-
-	Match.prototype.componentDidMount = function componentDidMount() {
-		_preactRouter.subscribers.push(this.update);
-	};
-
-	Match.prototype.componentWillUnmount = function componentWillUnmount() {
-		_preactRouter.subscribers.splice(_preactRouter.subscribers.indexOf(this.update) >>> 0, 1);
-	};
-
-	Match.prototype.render = function render(props) {
-		var url = this.nextUrl || (0, _preactRouter.getCurrentUrl)(),
-		    path = url.replace(/\?.+$/, '');
-		this.nextUrl = null;
-		return props.children[0] && props.children[0]({
-			url: url,
-			path: path,
-			matches: path === props.path
-		});
-	};
-
-	return Match;
-}(_preact.Component);
-
-var Link = function Link(_ref) {
-	var activeClassName = _ref.activeClassName,
-	    path = _ref.path,
-	    props = _objectWithoutProperties(_ref, ['activeClassName', 'path']);
-
-	return (0, _preact.h)(Match, { path: path || props.href }, function (_ref2) {
-		var matches = _ref2.matches;
-		return (0, _preact.h)(_preactRouter.Link, _extends({}, props, { 'class': [props.class || props.className, matches && activeClassName].filter(Boolean).join(' ') }));
-	});
-};
-
-exports.Link = Link;
-exports.default = Match;
-
-Match.Link = Link;
-
-/***/ }),
-
-/***/ "u3et":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"header":"header__3QGkI","active":"active__3gItZ"};
 
 /***/ })
 
