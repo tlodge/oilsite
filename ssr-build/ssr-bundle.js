@@ -58,7 +58,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/oilsite/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = "JkW7");
@@ -455,7 +455,7 @@ Router.Link = Link;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"home":"home__2lSf6","pricing":"pricing__1im3a","containerbox":"containerbox__1wvpC","imagebox":"imagebox__2ELF8","dropimage":"dropimage__3I-of","roundedtop":"roundedtop__GWzPP","lefttop":"lefttop__AIl5h","righttop":"righttop__3PSrH","leftbottom":"leftbottom__2fxzo","rightbottom":"rightbottom__zqsSp","topcenter":"topcenter__3bpif","centerright":"centerright__2mv2t","erroricon":"erroricon__2vmkg","centerleft":"centerleft__U9tMW","label":"label__jJP_3","smallabel":"smallabel__1p9w1","centerbox":"centerbox__15tYj","bottomcenter":"bottomcenter__X89p2","button":"button__1FwTm","slide":"slide__3Du5N","buttontext":"buttontext__3S7v1","logo":"logo__1V-K0","input":"input__19ZZ7","roundedbottom":"roundedbottom__1wi_B"};
+module.exports = {"center":"center__1ucmo","centerleft":"centerleft__U9tMW","centerright":"centerright__2mv2t","label":"label__jJP_3","quotedetails":"quotedetails__1SJ0_","timeframe":"timeframe__2t2UG","smallabel":"smallabel__1p9w1","droplet":"droplet__3AueL","quote":"quote__4b2nX"};
 
 /***/ }),
 
@@ -8143,7 +8143,11 @@ var index_es_ZoomOut = function ZoomOut(props) {
 
 
 //# sourceMappingURL=index.es.js.map
-// CONCATENATED MODULE: ./routes/home/index.js
+// EXTERNAL MODULE: ./routes/quote/style.css
+var quote_style = __webpack_require__("BBdy");
+var quote_style_default = /*#__PURE__*/__webpack_require__.n(quote_style);
+
+// CONCATENATED MODULE: ./routes/quote/index.js
 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8151,6 +8155,92 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var quote__ref = Object(preact_min["h"])(
+    'strong',
+    null,
+    '50p'
+);
+
+var quote_Quote = function (_Component) {
+    _inherits(Quote, _Component);
+
+    function Quote() {
+        _classCallCheck(this, Quote);
+
+        return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+    }
+
+    Quote.prototype.render = function render() {
+        return Object(preact_min["h"])(
+            'div',
+            { 'class': quote_style_default.a.center },
+            Object(preact_min["h"])(
+                'div',
+                { 'class': quote_style_default.a.centerleft },
+                Object(preact_min["h"])(
+                    'div',
+                    { 'class': quote_style_default.a.droplet },
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': quote_style_default.a.quote },
+                        '\xA3' + this.props.litres / 2
+                    ),
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': quote_style_default.a.smallabel },
+                        'price includes VAT'
+                    )
+                )
+            ),
+            Object(preact_min["h"])(
+                'div',
+                { 'class': quote_style_default.a.centerright },
+                Object(preact_min["h"])(
+                    'div',
+                    { 'class': quote_style_default.a.quotedetails },
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': quote_style_default.a.label },
+                        'we will supply ',
+                        Object(preact_min["h"])(
+                            'strong',
+                            null,
+                            this.props.litres
+                        ),
+                        ' litres at ',
+                        quote__ref,
+                        ' per litre'
+                    )
+                ),
+                Object(preact_min["h"])(
+                    'div',
+                    { 'class': quote_style_default.a.timeframe },
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': quote_style_default.a.smallabel },
+                        'price valid until 29 March 2019'
+                    )
+                )
+            )
+        );
+    };
+
+    return Quote;
+}(preact_min["Component"]);
+
+
+// CONCATENATED MODULE: ./routes/home/index.js
+
+
+function home__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function home__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function home__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 
 
@@ -8197,23 +8287,29 @@ var _ref3 = Object(preact_min["h"])(index_es_Check, { color: "white", size: 34 }
 
 var _ref4 = Object(preact_min["h"])(index_es_AlertCircle, { color: "white", size: 34 });
 
+var _ref5 = Object(preact_min["h"])(
+	'strong',
+	null,
+	'079725639571'
+);
+
 var home_Home = function (_Component) {
-	_inherits(Home, _Component);
+	home__inherits(Home, _Component);
 
 	function Home() {
 		var _temp, _this, _ret;
 
-		_classCallCheck(this, Home);
+		home__classCallCheck(this, Home);
 
 		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
 			args[_key] = arguments[_key];
 		}
 
-		return _ret = (_temp = (_this = _possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.state = {
+		return _ret = (_temp = (_this = home__possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.state = {
 			postcode: "",
 			litres: "",
 			screen: "home"
-		}, _temp), _possibleConstructorReturn(_this, _ret);
+		}, _temp), home__possibleConstructorReturn(_this, _ret);
 	}
 
 	Home.prototype.renderLitres = function renderLitres() {
@@ -8295,44 +8391,104 @@ var home_Home = function (_Component) {
 	};
 
 	Home.prototype.renderQuote = function renderQuote() {
-		var _this4 = this;
-
 		return Object(preact_min["h"])(
 			'div',
-			{ 'class': home_style_default.a.rightbottom },
-			Object(preact_min["h"])(
-				'div',
-				{ 'class': home_style_default.a.button },
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': home_style_default.a.buttontext },
-					Object(preact_min["h"])(
-						'div',
-						{ onClick: function onClick(e) {
-								return _this4.setState({ screen: "quote" });
-							} },
-						'get my quote'
-					)
-				)
-			)
+			{ 'class': home_style_default.a.back },
+			Object(preact_min["h"])(quote_Quote, { litres: this.state.litres })
 		);
 	};
 
-	Home.prototype.renderHomeContent = function renderHomeContent() {
+	Home.prototype.renderHome = function renderHome() {
 		return Object(preact_min["h"])(
 			'div',
-			{ 'class': home_style_default.a.centerbox },
+			{ 'class': home_style_default.a.front },
 			this.renderLitres(),
 			this.renderPostcode()
 		);
 	};
 
-	Home.prototype.renderQuoteContent = function renderQuoteContent() {
-		return Object(preact_min["h"])('div', { 'class': home_style_default.a.flipbox });
+	Home.prototype.renderContent = function renderContent() {
+		var inlinestyle = this.state.screen === "quote" ? { transform: "rotateY(180deg)" } : {};
+
+		return Object(preact_min["h"])(
+			'div',
+			{ 'class': home_style_default.a.centerbox, style: inlinestyle },
+			this.renderHome(),
+			this.renderQuote()
+		);
+	};
+
+	Home.prototype.callMe = function callMe() {
+		var reference = ('DP' + this.state.postcode + this.state.litres).toUpperCase();
+
+		return Object(preact_min["h"])(
+			'div',
+			{ 'class': home_style_default.a.fullbottom },
+			Object(preact_min["h"])(
+				'span',
+				{ 'class': home_style_default.a.callmetext },
+				'to order please call ',
+				_ref5,
+				' and quote ',
+				Object(preact_min["h"])(
+					'strong',
+					null,
+					reference
+				)
+			)
+		);
+	};
+
+	Home.prototype.renderFooter = function renderFooter() {
+		var cansubmit = checklitres(this.state.litres.trim()) && checkpostcode(this.state.postcode.trim());
+
+		if (this.state.screen === "home") {
+			return Object(preact_min["h"])(
+				'div',
+				{ 'class': home_style_default.a.roundedbottom },
+				Object(preact_min["h"])('div', { 'class': home_style_default.a.leftbottom }),
+				Object(preact_min["h"])(
+					'div',
+					{ 'class': home_style_default.a.rightbottom },
+					cansubmit && this.renderGetQuote()
+				)
+			);
+		}
+		if (this.state.screen === "quote") {
+			return Object(preact_min["h"])(
+				'div',
+				{ 'class': home_style_default.a.roundedbottom },
+				Object(preact_min["h"])(
+					'div',
+					{ 'class': home_style_default.a.fullbottom },
+					this.callMe()
+				)
+			);
+		}
+		return null;
+	};
+
+	Home.prototype.renderGetQuote = function renderGetQuote() {
+		var _this4 = this;
+
+		return Object(preact_min["h"])(
+			'div',
+			{ 'class': home_style_default.a.button },
+			Object(preact_min["h"])(
+				'div',
+				{ 'class': home_style_default.a.buttontext },
+				Object(preact_min["h"])(
+					'div',
+					{ onClick: function onClick(e) {
+							return _this4.setState({ screen: "quote" });
+						} },
+					'get my quote'
+				)
+			)
+		);
 	};
 
 	Home.prototype.render = function render() {
-		var cansubmit = checklitres(this.state.litres.trim()) && checkpostcode(this.state.postcode.trim());
 
 		return Object(preact_min["h"])(
 			'div',
@@ -8355,228 +8511,13 @@ var home_Home = function (_Component) {
 						Object(preact_min["h"])('div', { 'class': home_style_default.a.logo })
 					)
 				),
-				this.state.screen === "home" && this.renderHomeContent(),
-				this.state.screen === "quote" && this.renderQuoteContent(),
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': home_style_default.a.roundedbottom },
-					Object(preact_min["h"])('div', { 'class': home_style_default.a.leftbottom }),
-					cansubmit && this.renderQuote()
-				)
+				this.renderContent(),
+				this.renderFooter()
 			)
 		);
 	};
 
 	return Home;
-}(preact_min["Component"]);
-
-
-// EXTERNAL MODULE: ./routes/quote/style.css
-var quote_style = __webpack_require__("BBdy");
-var quote_style_default = /*#__PURE__*/__webpack_require__.n(quote_style);
-
-// CONCATENATED MODULE: ./routes/quote/index.js
-
-
-function quote__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function quote__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function quote__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-var quote_ELIGIBLEPOSTCODES = ["CO1", "CO2", "CO3", "CO4", "CO5", "CO6", "CO7", "CO8", "CO9", "C10", "C11", "CB"];
-
-var quote_checklitres = function checklitres() {
-	var litres = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-
-	var n = Number(litres);
-
-	if (isNaN(n)) return false;
-	return n >= 100 && n <= 2000;
-};
-
-var quote_checkpostcode = function checkpostcode() {
-	var postcode = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-
-	var p = postcode.replace(/\s/g, "").toUpperCase();
-
-	return quote_ELIGIBLEPOSTCODES.indexOf(p.toUpperCase()) !== -1;
-};
-
-var quote__ref = Object(preact_min["h"])(index_es_Check, { color: "white", size: 34 });
-
-var quote__ref2 = Object(preact_min["h"])(index_es_AlertCircle, { color: "white", size: 34 });
-
-var quote__ref3 = Object(preact_min["h"])(index_es_Check, { color: "white", size: 34 });
-
-var quote__ref4 = Object(preact_min["h"])(index_es_AlertCircle, { color: "white", size: 34 });
-
-var _ref5 = Object(preact_min["h"])(
-	match["Link"],
-	{ href: '/profile' },
-	'get my quote'
-);
-
-var quote_Quote = function (_Component) {
-	quote__inherits(Quote, _Component);
-
-	function Quote() {
-		var _temp, _this, _ret;
-
-		quote__classCallCheck(this, Quote);
-
-		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-			args[_key] = arguments[_key];
-		}
-
-		return _ret = (_temp = (_this = quote__possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _this.state = {
-			postcode: "",
-			litres: ""
-		}, _temp), quote__possibleConstructorReturn(_this, _ret);
-	}
-
-	Quote.prototype.renderLitres = function renderLitres() {
-		var _this2 = this;
-
-		var empty = this.state.litres.trim() === "";
-		var valid = quote_checklitres(this.state.litres);
-		var icon = valid ? quote__ref : quote__ref2;
-
-		return Object(preact_min["h"])(
-			'div',
-			{ 'class': quote_style_default.a.topcenter },
-			Object(preact_min["h"])(
-				'div',
-				{ 'class': quote_style_default.a.centerleft },
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.label },
-					'how many litres?'
-				),
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.smallabel },
-					'minimum 100, maximum 2000'
-				)
-			),
-			Object(preact_min["h"])(
-				'div',
-				{ 'class': quote_style_default.a.centerright },
-				Object(preact_min["h"])('input', { value: this.state.litres, onInput: function onInput(e) {
-						return _this2.setState({ litres: e.target.value });
-					}, placeholder: 'e.g. 250', 'class': quote_style_default.a.input }),
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.erroricon },
-					!empty && icon
-				)
-			)
-		);
-	};
-
-	Quote.prototype.renderPostcode = function renderPostcode() {
-		var _this3 = this;
-
-		var empty = this.state.postcode.trim() === "";
-		var valid = quote_checkpostcode(this.state.postcode);
-		var icon = valid ? quote__ref3 : quote__ref4;
-
-		return Object(preact_min["h"])(
-			'div',
-			{ 'class': quote_style_default.a.bottomcenter },
-			Object(preact_min["h"])(
-				'div',
-				{ 'class': quote_style_default.a.centerleft },
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.label },
-					'your QUOTE'
-				),
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.smallabel },
-					'we only need the first part e.g CO1'
-				)
-			),
-			Object(preact_min["h"])(
-				'div',
-				{ 'class': quote_style_default.a.centerright },
-				Object(preact_min["h"])('input', { value: this.state.postcode, onInput: function onInput(e) {
-						return _this3.setState({ postcode: e.target.value });
-					}, placeholder: 'e.g. CO1', 'class': quote_style_default.a.input }),
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.erroricon },
-					!empty && icon
-				)
-			)
-		);
-	};
-
-	Quote.prototype.renderQuote = function renderQuote() {
-
-		return Object(preact_min["h"])(
-			'div',
-			{ 'class': quote_style_default.a.rightbottom },
-			Object(preact_min["h"])(
-				'div',
-				{ 'class': quote_style_default.a.button },
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.buttontext },
-					_ref5
-				)
-			)
-		);
-	};
-
-	Quote.prototype.render = function render() {
-		var cansubmit = quote_checklitres(this.state.litres.trim()) && quote_checkpostcode(this.state.postcode.trim());
-
-		return Object(preact_min["h"])(
-			'div',
-			{ id: quote_style_default.a.pricing },
-			Object(preact_min["h"])(
-				'div',
-				{ 'class': quote_style_default.a.containerbox },
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.imagebox },
-					Object(preact_min["h"])('div', { 'class': quote_style_default.a.dropimage })
-				),
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.roundedtop },
-					Object(preact_min["h"])('div', { 'class': quote_style_default.a.lefttop }),
-					Object(preact_min["h"])(
-						'div',
-						{ 'class': quote_style_default.a.righttop },
-						Object(preact_min["h"])('div', { 'class': quote_style_default.a.logo })
-					)
-				),
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.centerbox },
-					this.renderLitres(),
-					this.renderPostcode()
-				),
-				Object(preact_min["h"])(
-					'div',
-					{ 'class': quote_style_default.a.roundedbottom },
-					Object(preact_min["h"])('div', { 'class': quote_style_default.a.leftbottom }),
-					cansubmit && this.renderQuote()
-				)
-			)
-		);
-	};
-
-	return Quote;
 }(preact_min["Component"]);
 
 
@@ -8859,7 +8800,7 @@ var app_App = function (_Component) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"home":"home__MseGd","pricing":"pricing__3Lrwt","containerbox":"containerbox__1fbUG","imagebox":"imagebox__2CTo3","dropimage":"dropimage__Ig9W5","roundedtop":"roundedtop__3hz1V","lefttop":"lefttop__2j1c9","righttop":"righttop__26j15","leftbottom":"leftbottom__3b_RR","rightbottom":"rightbottom__U_NrB","topcenter":"topcenter__1YBaT","centerright":"centerright__2TejC","erroricon":"erroricon__3dsRH","centerleft":"centerleft__kU-Kk","label":"label__2WshR","smallabel":"smallabel__1LHhL","centerbox":"centerbox__2ZW5T","flipbox":"flipbox__7lgup","flip":"flip__2Vylr","bottomcenter":"bottomcenter__3kPDt","button":"button__2cB2u","slide":"slide__2QCXG","buttontext":"buttontext__2IACn","logo":"logo__1yT4h","input":"input__Pd_I1","roundedbottom":"roundedbottom__21Dmo"};
+module.exports = {"home":"home__MseGd","pricing":"pricing__3Lrwt","containerbox":"containerbox__1fbUG","imagebox":"imagebox__2CTo3","dropimage":"dropimage__Ig9W5","roundedtop":"roundedtop__3hz1V","lefttop":"lefttop__2j1c9","righttop":"righttop__26j15","leftbottom":"leftbottom__3b_RR","rightbottom":"rightbottom__U_NrB","fullbottom":"fullbottom__ZKlQG","topcenter":"topcenter__1YBaT","centerright":"centerright__2TejC","erroricon":"erroricon__3dsRH","centerleft":"centerleft__kU-Kk","label":"label__2WshR","smallabel":"smallabel__1LHhL","centerbox":"centerbox__2ZW5T","flip":"flip__2Vylr","front":"front__3UqRP","back":"back__3vcvV","bottomcenter":"bottomcenter__3kPDt","button":"button__2cB2u","slide":"slide__2QCXG","buttontext":"buttontext__2IACn","logo":"logo__1yT4h","input":"input__Pd_I1","roundedbottom":"roundedbottom__21Dmo","callmetext":"callmetext__2yzst"};
 
 /***/ }),
 
