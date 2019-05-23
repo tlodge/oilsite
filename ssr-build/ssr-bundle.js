@@ -66,6 +66,14 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "66ZY":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"center":"center__PIcQQ","title":"title__3jKi7","titletext":"titletext__ejPqe","centercontent":"centercontent__3cUYw","centerleft":"centerleft__1XQzA","centerright":"centerright__13HU7","label":"label__1LvSo","quotedetails":"quotedetails__2R_IS","timeframe":"timeframe__1WBST","smallabel":"smallabel__3ET8D","droplet":"droplet__2u-Gi","quote":"quote__1tt7o","inputcell":"inputcell__3ANwK","inputline":"inputline__31bdW","input":"input__2s_vg","inputlong":"inputlong__3Cgo_","inputshort":"inputshort__3m-Mg","detailtitle":"detailtitle__3uS_m","detailtext":"detailtext__dMyqi"};
+
+/***/ }),
+
 /***/ "BBdy":
 /***/ (function(module, exports) {
 
@@ -8167,6 +8175,177 @@ var quote_Quote = function (_Component) {
 }(preact_min["Component"]);
 
 
+// EXTERNAL MODULE: ./routes/details/style.css
+var details_style = __webpack_require__("66ZY");
+var details_style_default = /*#__PURE__*/__webpack_require__.n(details_style);
+
+// CONCATENATED MODULE: ./routes/details/index.js
+
+
+function details__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function details__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function details__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var details_Details = function (_Component) {
+    details__inherits(Details, _Component);
+
+    function Details() {
+        details__classCallCheck(this, Details);
+
+        return details__possibleConstructorReturn(this, _Component.apply(this, arguments));
+    }
+
+    Details.prototype.render = function render() {
+        return Object(preact_min["h"])(
+            'div',
+            { 'class': details_style_default.a.center },
+            Object(preact_min["h"])(
+                'div',
+                { 'class': details_style_default.a.title },
+                Object(preact_min["h"])(
+                    'div',
+                    { 'class': details_style_default.a.titletext },
+                    'your details'
+                )
+            ),
+            Object(preact_min["h"])(
+                'div',
+                { 'class': details_style_default.a.centercontent },
+                Object(preact_min["h"])(
+                    'div',
+                    { 'class': details_style_default.a.centerleft },
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': details_style_default.a.detailtitle },
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.detailtext },
+                            'your name and address'
+                        )
+                    ),
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': details_style_default.a.inputcell },
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.label },
+                            ' your name '
+                        ),
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.inputline },
+                            ' ',
+                            Object(preact_min["h"])('input', { 'class': details_style_default.a.input, type: 'text' }),
+                            ' '
+                        )
+                    ),
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': details_style_default.a.inputcell },
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.label },
+                            ' address line one '
+                        ),
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.inputline },
+                            ' ',
+                            Object(preact_min["h"])('input', { 'class': details_style_default.a.inputlong, type: 'text' }),
+                            ' '
+                        )
+                    ),
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': details_style_default.a.inputcell },
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.label },
+                            ' address line two '
+                        ),
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.inputline },
+                            ' ',
+                            Object(preact_min["h"])('input', { 'class': details_style_default.a.inputlong, xtype: 'text' }),
+                            ' '
+                        )
+                    ),
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': details_style_default.a.inputcell },
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.label },
+                            ' postcode '
+                        ),
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.inputline },
+                            ' ',
+                            Object(preact_min["h"])('input', { 'class': details_style_default.a.inputshort, type: 'text' }),
+                            ' '
+                        )
+                    )
+                ),
+                Object(preact_min["h"])(
+                    'div',
+                    { 'class': details_style_default.a.centerright },
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': details_style_default.a.detailtitle },
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.detailtext },
+                            'your contact details'
+                        )
+                    ),
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': details_style_default.a.inputcell },
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.label },
+                            ' your email '
+                        ),
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.inputline },
+                            ' ',
+                            Object(preact_min["h"])('input', { 'class': details_style_default.a.inputlong, type: 'text' }),
+                            ' '
+                        )
+                    ),
+                    Object(preact_min["h"])(
+                        'div',
+                        { 'class': details_style_default.a.inputcell },
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.label },
+                            ' your telephone '
+                        ),
+                        Object(preact_min["h"])(
+                            'div',
+                            { 'class': details_style_default.a.inputline },
+                            ' ',
+                            Object(preact_min["h"])('input', { 'class': details_style_default.a.input, type: 'text' }),
+                            ' '
+                        )
+                    )
+                )
+            )
+        );
+    };
+
+    return Details;
+}(preact_min["Component"]);
+
+
 // CONCATENATED MODULE: ./routes/home/index.js
 
 
@@ -8175,6 +8354,7 @@ function home__classCallCheck(instance, Constructor) { if (!(instance instanceof
 function home__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function home__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -8220,12 +8400,6 @@ var _ref2 = Object(preact_min["h"])(index_es_AlertCircle, { color: "white", size
 var _ref3 = Object(preact_min["h"])(index_es_Check, { color: "white", size: 34 });
 
 var _ref4 = Object(preact_min["h"])(index_es_AlertCircle, { color: "white", size: 34 });
-
-var _ref5 = Object(preact_min["h"])(
-	'strong',
-	null,
-	'079725639571'
-);
 
 var home_Home = function (_Component) {
 	home__inherits(Home, _Component);
@@ -8332,6 +8506,14 @@ var home_Home = function (_Component) {
 		);
 	};
 
+	Home.prototype.renderDetails = function renderDetails() {
+		return Object(preact_min["h"])(
+			'div',
+			{ 'class': home_style_default.a.back2 },
+			Object(preact_min["h"])(details_Details, { litres: this.state.litres })
+		);
+	};
+
 	Home.prototype.renderHome = function renderHome() {
 		return Object(preact_min["h"])(
 			'div',
@@ -8347,27 +8529,47 @@ var home_Home = function (_Component) {
 		return Object(preact_min["h"])(
 			'div',
 			{ 'class': home_style_default.a.centerbox, style: inlinestyle },
-			this.renderHome(),
-			this.renderQuote()
+			this.state.screen === "quote" && this.renderQuote(),
+			this.state.screen === "details" && this.renderDetails(),
+			this.renderHome()
 		);
 	};
 
-	Home.prototype.callMe = function callMe() {
-		var reference = ('DP' + this.state.postcode + this.state.litres).toUpperCase();
+	Home.prototype.acceptQuote = function acceptQuote() {
+		var _this4 = this;
 
 		return Object(preact_min["h"])(
 			'div',
-			{ 'class': home_style_default.a.fullbottom },
+			{ 'class': home_style_default.a.button },
 			Object(preact_min["h"])(
-				'span',
-				{ 'class': home_style_default.a.callmetext },
-				'to order please call ',
-				_ref5,
-				' and quote ',
+				'div',
+				{ 'class': home_style_default.a.buttontext },
 				Object(preact_min["h"])(
-					'strong',
-					null,
-					reference
+					'div',
+					{ onClick: function onClick(e) {
+							return _this4.setState({ screen: "details" });
+						} },
+					'order my oil'
+				)
+			)
+		);
+	};
+
+	Home.prototype.placeOrder = function placeOrder() {
+		var _this5 = this;
+
+		return Object(preact_min["h"])(
+			'div',
+			{ 'class': home_style_default.a.button },
+			Object(preact_min["h"])(
+				'div',
+				{ 'class': home_style_default.a.buttontext },
+				Object(preact_min["h"])(
+					'div',
+					{ onClick: function onClick(e) {
+							return _this5.setState({ screen: "home" });
+						} },
+					'place order'
 				)
 			)
 		);
@@ -8392,10 +8594,31 @@ var home_Home = function (_Component) {
 			return Object(preact_min["h"])(
 				'div',
 				{ 'class': home_style_default.a.roundedbottom },
+				Object(preact_min["h"])('div', { 'class': home_style_default.a.leftbottom }),
 				Object(preact_min["h"])(
 					'div',
-					{ 'class': home_style_default.a.fullbottom },
-					this.callMe()
+					{ 'class': home_style_default.a.rightbottom },
+					this.acceptQuote()
+				)
+			);
+		}
+		if (this.state.screen === "details") {
+			return Object(preact_min["h"])(
+				'div',
+				{ 'class': home_style_default.a.roundedbottom },
+				Object(preact_min["h"])(
+					'div',
+					{ 'class': home_style_default.a.leftbottom },
+					Object(preact_min["h"])(
+						'div',
+						{ 'class': home_style_default.a.footertext },
+						'Once ordered we will contact you to arrange a delivery time'
+					)
+				),
+				Object(preact_min["h"])(
+					'div',
+					{ 'class': home_style_default.a.rightbottom },
+					this.placeOrder()
 				)
 			);
 		}
@@ -8403,7 +8626,7 @@ var home_Home = function (_Component) {
 	};
 
 	Home.prototype.renderGetQuote = function renderGetQuote() {
-		var _this4 = this;
+		var _this6 = this;
 
 		return Object(preact_min["h"])(
 			'div',
@@ -8414,7 +8637,7 @@ var home_Home = function (_Component) {
 				Object(preact_min["h"])(
 					'div',
 					{ onClick: function onClick(e) {
-							return _this4.setState({ screen: "quote" });
+							return _this6.setState({ screen: "quote" });
 						} },
 					'get my quote'
 				)
@@ -8433,7 +8656,7 @@ var home_Home = function (_Component) {
 				Object(preact_min["h"])(
 					'div',
 					{ 'class': home_style_default.a.imagebox },
-					Object(preact_min["h"])('div', { 'class': home_style_default.a.dropimage })
+					this.state.screen !== "details" && Object(preact_min["h"])('div', { 'class': home_style_default.a.dropimage })
 				),
 				Object(preact_min["h"])(
 					'div',
@@ -8731,7 +8954,7 @@ var app_App = function (_Component) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"home":"home__MseGd","pricing":"pricing__3Lrwt","containerbox":"containerbox__1fbUG","imagebox":"imagebox__2CTo3","dropimage":"dropimage__Ig9W5","roundedtop":"roundedtop__3hz1V","lefttop":"lefttop__2j1c9","righttop":"righttop__26j15","leftbottom":"leftbottom__3b_RR","rightbottom":"rightbottom__U_NrB","fullbottom":"fullbottom__ZKlQG","topcenter":"topcenter__1YBaT","centerright":"centerright__2TejC","erroricon":"erroricon__3dsRH","centerleft":"centerleft__kU-Kk","label":"label__2WshR","smallabel":"smallabel__1LHhL","centerbox":"centerbox__2ZW5T","flip":"flip__2Vylr","front":"front__3UqRP","back":"back__3vcvV","bottomcenter":"bottomcenter__3kPDt","button":"button__2cB2u","slide":"slide__2QCXG","buttontext":"buttontext__2IACn","logo":"logo__1yT4h","input":"input__Pd_I1","roundedbottom":"roundedbottom__21Dmo","callmetext":"callmetext__2yzst"};
+module.exports = {"home":"home__MseGd","pricing":"pricing__3Lrwt","containerbox":"containerbox__1fbUG","imagebox":"imagebox__2CTo3","dropimage":"dropimage__Ig9W5","roundedtop":"roundedtop__3hz1V","lefttop":"lefttop__2j1c9","righttop":"righttop__26j15","leftbottom":"leftbottom__3b_RR","rightbottom":"rightbottom__U_NrB","fullbottom":"fullbottom__ZKlQG","topcenter":"topcenter__1YBaT","centerright":"centerright__2TejC","erroricon":"erroricon__3dsRH","centerleft":"centerleft__kU-Kk","label":"label__2WshR","smallabel":"smallabel__1LHhL","centerbox":"centerbox__2ZW5T","flip":"flip__2Vylr","front":"front__3UqRP","back":"back__3vcvV","back2":"back2__WOm1M","bottomcenter":"bottomcenter__3kPDt","button":"button__2cB2u","slide":"slide__2QCXG","buttontext":"buttontext__2IACn","logo":"logo__1yT4h","input":"input__Pd_I1","roundedbottom":"roundedbottom__21Dmo","footertext":"footertext__1zwoA"};
 
 /***/ }),
 
